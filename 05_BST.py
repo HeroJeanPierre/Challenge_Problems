@@ -19,7 +19,7 @@ class BST:
 
 	def _insert(self, key, name, current_node):
 
-		if key < current_node.key:
+		if key < current_node.key: 
 			if current_node.left == None:
 				current_node.left = node(key, name)
 			else:

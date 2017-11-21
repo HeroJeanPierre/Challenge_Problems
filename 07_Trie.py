@@ -39,9 +39,13 @@ class trie:
 			current_node.endOfWord = True
 			return
 
+		# if the character is not in the children nodes of the 
+		# current node, create a new node
 		if(word[word_index] not in current_node.children):
 			current_node.children[word[word_index]] = node()
 			self._recursive_insert(current_node.children[word[word_index]], word, word_index+1)
+			
+		# If it IS in the children node.
 		else:
 			self._recursive_insert(current_node.children[word[word_index]], word, word_index+1)
 	

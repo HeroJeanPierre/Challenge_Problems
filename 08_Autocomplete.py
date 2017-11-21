@@ -68,7 +68,7 @@ class trie:
 				return results
 
 		self.findAllChildWords(current_node, results)
-		return results
+		return resultskkkkk
 
 	def findAllChildWords(self, current_node, results):
 		if current_node.isWord:

@@ -9,7 +9,8 @@ class node:
 class linkedList:
 	def __init__(self):
 		self.head=node()
- 
+	
+	 
 
 	def erase(self, index):
 		if(index >= self.size()):
